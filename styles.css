@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(Assets/LogIn\ BackGround\ Cover\ Photo.jpg);
+    background-size: cover;
+}
+
+form{
+    height: 320px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.social-media{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
+  button:hover {
+    animation: sh0 0.5s ease-in-out both;
+  }
+  
+  @keyframes sh0 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  button::before,
+  button::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+  
+  button:hover::before,
+  button:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
+  button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+  
+  button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #838383;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media i {
+    font-size: 34px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .social-media i:hover {
+    color: #000000;
+  }
+  
